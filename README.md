@@ -90,7 +90,6 @@ After compiling, you can run the executable:
 - **Enhanced Validation**: Improve move validation to include all chess rules (e.g., castling, en passant).
 
 ## License
-This project is licensed under the MIT License.
 
 ## Contact
-For any questions or suggestions, please contact [Your Name] at [your.email@example.com].
+

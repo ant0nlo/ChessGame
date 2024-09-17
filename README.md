@@ -67,11 +67,51 @@ Located in `ChessGame.h` and `ChessGame.cpp`, this class manages the overall gam
 - **SDL2**: Simple DirectMedia Layer library for handling graphics and input.
 - **SDL2_image**: SDL library extension for loading images.
 
+## Prerequisites
+
+Before running or compiling the project, you need to install the following libraries:
+
+### SDL2 and SDL2_image
+
+#### Linux (Ubuntu/Debian):
+```bash
+sudo apt-get install libsdl2-dev libsdl2-image-dev
+```
+
+#### MacOS (via Homebrew):
+```bash
+brew install sdl2 sdl2_image
+```
+
+#### Windows:
+1. Download [SDL2](https://www.libsdl.org/download-2.0.php) and [SDL2_image](https://www.libsdl.org/projects/SDL_image/) development libraries.
+2. Copy the `SDL2.dll` and `SDL2_image.dll` files to the directory where your executable will be, or ensure they are in your system's PATH.
+
 ### Compilation
 To compile the project, you can use the following command:
 ```sh
 g++ -o main main.cpp Board.cpp ChessGame.cpp -Iinclude/SDL2 -Llib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
 ```
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ant0nlo/ChessGame.git
+   cd ChessGame
+   ```
+
+2. **Install dependencies**:
+   Make sure that SDL2 and SDL2_image are installed on your system (see [Prerequisites](#prerequisites)).
+
+3. **Compile the project**:
+   ```bash
+   g++ -o ChessGame main.cpp Board.cpp ChessGame.cpp -Iinclude/SDL2 -Llib -lSDL2 -lSDL2_image
+   ```
+
+4. **Run the game**:
+   ```bash
+   ./ChessGame
+   ```
 
 ### Execution
 After compiling, you can run the executable:
